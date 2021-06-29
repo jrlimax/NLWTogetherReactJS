@@ -10,7 +10,7 @@ import answerImg from '../assets/images/answer.svg';
 
 // import { database } from '../services/firebase';
 
-import { useHistory, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 
 // import { useAuth } from '../hooks/useAuth';
 
@@ -64,7 +64,9 @@ export function AdminRoom(){
 		<div id="page-room">
 			<header>
 				<div className="content">
+				<Link to="/" className="logoHome">
 					<img src={logoImg} alt="letmeask" />
+				</Link>
 					<div>
 					<RoomCode code={roomId}/>
 					<Button isOutlined onClick={handleEndRoom}>Encerrar a sala</Button>

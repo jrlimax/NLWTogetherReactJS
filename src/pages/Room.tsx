@@ -5,7 +5,7 @@ import { FormEvent, useState} from 'react';
 
 import { database } from '../services/firebase';
 
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { useAuth } from '../hooks/useAuth';
 
@@ -69,7 +69,9 @@ export function Room(){
 		<div id="page-room">
 			<header>
 				<div className="content">
+					<Link to="/" className="logoHome">
 					<img src={logoImg} alt="letmeask" />
+					</Link>
 					<RoomCode code={roomId}/>
 				</div>
 			</header>

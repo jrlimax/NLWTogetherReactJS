@@ -9,11 +9,17 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-  
-		> img {
-		  max-height: 45px;
+
+		.logoHome{
+			cursor: pointer;
+			border: 0;
+			background:#f8f8f8;
+
+			> img {
+			  max-height: 45px;
+			}
+
 		}
-  
 		> div {
 		  display: flex;
 		  gap: 16px;
